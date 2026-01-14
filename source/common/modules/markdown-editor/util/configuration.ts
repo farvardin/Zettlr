@@ -59,8 +59,8 @@ export interface EditorConfiguration {
     id: string
     library: string
   }
-  boldFormatting: '**'|'__'
-  italicFormatting: '*'|'_'
+  boldFormatting: '**'
+  italicFormatting: '//'
   citeStyle: 'in-text'|'in-text-suffix'|'regular'
   inputMode: 'default'|'vim'|'emacs'
   muteLines: boolean
@@ -121,7 +121,7 @@ export function getDefaultConfig (): EditorConfiguration {
       library: CITEPROC_MAIN_DB
     },
     boldFormatting: '**',
-    italicFormatting: '_',
+    italicFormatting: '//',
     citeStyle: 'regular',
     muteLines: true,
     readabilityAlgorithm: 'dale-chall',

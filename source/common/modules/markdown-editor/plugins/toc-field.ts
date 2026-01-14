@@ -32,7 +32,7 @@ function headingToID (headingString: string): string {
   const pandocAttrs = /\{(.+)\}$/.exec(headingString)
   if (pandocAttrs !== null) {
     const attrs = pandocAttrs[1].split(' ').map(x => x.trim()).filter(x => x !== '')
-    const id = attrs.find(x => x.startsWith('#'))
+    const id = attrs.find(x => x.startsWith('='))
     if (id !== undefined) {
       return id.substring(1)
     }
@@ -54,6 +54,8 @@ function headingToID (headingString: string): string {
   text = text.replace(/[*_]{1,3}(.+)[*_]{1,3}/g, '$1')
   text = text.replace(/`[^`]+`/g, '$1')
   text = text.replace(/\[.+\]\(.+\)/g, '')
+  // txt2tags heading
+  text = text.replace(/==/g, '##')
   // Remove all footnotes.
   text = text.replace(/\[\^.+\]/g, '')
   // Replace all spaces and newlines with hyphens.
