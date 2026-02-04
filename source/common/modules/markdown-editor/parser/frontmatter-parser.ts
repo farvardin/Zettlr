@@ -13,7 +13,7 @@
  */
 
 import { type ParseWrapper, parseMixed } from '@lezer/common'
-import { type BlockParser } from '@lezer/markdown'
+import { type BlockParser } from '@farvardin/lezer-parser-markdown'
 import { yaml } from '@codemirror/lang-yaml'
 
 // Adapted from: https://github.com/lezer-parser/markdown/blob/main/src/nest.ts
@@ -44,7 +44,7 @@ export const frontmatterParser: BlockParser = {
   before: 'HorizontalRule',
   parse: (ctx, line) => {
     // This parser is inspired by the BlockParsers defined in
-    // @lezer/markdown/src/markdown.ts
+    // @farvardin/lezer-parser-markdown/src/markdown.ts
     if (line.text !== '---' || ctx.lineStart !== 0) {
       return false
     }

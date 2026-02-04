@@ -12,7 +12,7 @@
  * END HEADER
  */
 
-import { type InlineParser, type DelimiterType } from '@lezer/markdown'
+import { type InlineParser, type DelimiterType } from '@farvardin/lezer-parser-markdown'
 
 const MarkDelimiter: DelimiterType = {
   resolve: 'HighlightContent',

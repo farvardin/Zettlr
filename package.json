@@ -8,7 +8,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Zettlr/Zettlr.git"
+    "url": "git://github.com/farvardin/Zettlr.git"
   },
   "version": "4.1.1",
   "license": "GPL-3.0",
@@ -51,7 +51,6 @@
     "@codemirror/lang-css": "^6.3.1",
     "@codemirror/lang-javascript": "^6.2.4",
     "@codemirror/lang-json": "^6.0.2",
-    "@codemirror/lang-markdown": "^6.5.0",
     "@codemirror/lang-php": "^6.0.2",
     "@codemirror/lang-python": "^6.2.1",
     "@codemirror/lang-yaml": "^6.1.2",
@@ -61,10 +60,11 @@
     "@codemirror/search": "^6.5.11",
     "@codemirror/state": "^6.5.3",
     "@codemirror/view": "^6.39.9",
+    "@farvardin/codemirror-lang-markdown": "^6.5.0",
+    "@farvardin/lezer-parser-markdown": "^1.6.3",
     "@lezer/common": "^1.5.0",
     "@lezer/highlight": "^1.2.3",
     "@lezer/lr": "^1.4.7",
-    "@lezer/markdown": "^1.6.3",
     "@replit/codemirror-emacs": "^6.1.0",
     "@replit/codemirror-lang-nix": "^6.0.1",
     "@replit/codemirror-vim": "^6.3.0",

@@ -46,7 +46,7 @@ import {
 import { keymap } from '@codemirror/view'
 import {
   insertNewlineContinueMarkup, deleteMarkupBackward
-} from '@codemirror/lang-markdown'
+} from '@farvardin/codemirror-lang-markdown'
 import { type Extension } from '@codemirror/state'
 
 import { nextSnippet, abortSnippet } from '../autocomplete/snippets'

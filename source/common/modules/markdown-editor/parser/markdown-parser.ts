@@ -24,7 +24,7 @@ import {
 } from '@codemirror/language'
 
 // Import all the languages, first the "new" ones
-import { markdown, markdownLanguage } from '@codemirror/lang-markdown'
+import { markdown, markdownLanguage } from '@farvardin/codemirror-lang-markdown'
 import { php } from '@codemirror/lang-php'
 import { python } from '@codemirror/lang-python'
 import { css } from '@codemirror/lang-css'

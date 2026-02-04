@@ -23,7 +23,7 @@ import {
   type Element,
   type BlockContext,
   type LeafBlockParser
-} from '@lezer/markdown'
+} from '@farvardin/lezer-parser-markdown'
 
 // Pipe Table Regex (min 2 cells): `my cell | my other cell` or `| my cell | my other cell |`
 // ^\|?             => optional leading pipe

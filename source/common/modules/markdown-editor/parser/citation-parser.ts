@@ -20,7 +20,7 @@
 import { syntaxTree } from '@codemirror/language'
 import { type EditorState } from '@codemirror/state'
 import { type SyntaxNode } from '@lezer/common'
-import { type InlineParser, type Element as MDElement } from '@lezer/markdown'
+import { type InlineParser, type Element as MDElement } from '@farvardin/lezer-parser-markdown'
 
 // See https://github.com/bwiernik/schema/blob/ff67ae11347a4fb444ef839d96549540e9516cc1/schemas/input/csl-citation.json#L144 ff
 export type CSL_LOCATOR_TERM = 'article-locator' | 'book' | 'canon' | 'chapter'
