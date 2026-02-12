@@ -1,6 +1,6 @@
 {
     "import_files": [
-        [ "Markdown",                          "md", "markdown", "rmd", "mdx" ],
+        [ "Markdown",                          "md", "markdown", "rmd", "mdx", "gmi" ],
         [ "DocBook",                           "docbook" ],
         [ "Microsoft Word",                    "docx", "doc" ],
         [ "EPUB",                              "epub" ],

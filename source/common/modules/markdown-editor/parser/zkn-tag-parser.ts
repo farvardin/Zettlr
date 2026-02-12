@@ -12,7 +12,7 @@
  * END HEADER
  */
 
-import { type InlineParser } from '@lezer/markdown'
+import { type InlineParser } from '@farvardin/lezer-parser-markdown'
 
 // Any character allowed before a tag
 const allowedCharsBefore = /^[ \t\n\(\{\[]$/

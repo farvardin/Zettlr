@@ -1,9 +1,9 @@
 <h1 align="center">
   <a href="https://github.com/Zettlr/Zettlr">
-    <img src="https://raw.githubusercontent.com/Zettlr/Zettlr/master/resources/icons/png/256x256.png" alt="Zettlr"/>
+    <img src="https://raw.githubusercontent.com/Zettlr/Zettlr/master/resources/icons/png/64x64.png" alt="Zettlr"/>
   </a>
   <br/>
-  Zettlr [<em>ˈset·lər</em>]
+  Zettlr-t2t [<em>ˈset·lər</em>]
 </h1>
 
 <p align="center"><strong>Your One-Stop Publication Workbench</strong>.</p>
@@ -67,6 +67,7 @@ Focus on what matters to you.
 
 ## Features
 
+- This version is a fork of https://github.com/Zettlr/Zettlr, with support for txt2tags headings. 
 - Your Notes are your notes: Zettlr is **privacy-first**
 - **Citations** made easy: Tight and ever-growing integration with your favourite reference manager (Zotero, JabRef, and many others)
 - Available in over a **dozen languages**
@@ -155,6 +156,15 @@ $ yarn install --immutable
 The `--immutable` flag ensures that yarn will stick to the versions as listed in the `yarn.lock` and not attempt to update them.
 
 During development, hot module reloading (HMR) is active so that you can edit the renderer's code easily and hit `F5` after the changes have been compiled by `electron-forge`. You can keep the developer tools open to see when HMR has finished loading your changes.
+
+This version is using references to:
+- https://github.com/farvardin/codemirror-lang-markdown
+- https:/github.com/farvardin/lezer-parser-markdown
+
+
+to parse markdown instead of the official ones, which add support for txt2tags headings.
+
+
 
 ### What Should I Know To Contribute Code?
 

@@ -13,7 +13,7 @@
  * END HEADER
  */
 
-import type { InlineParser, BlockParser, BlockContext, Line, DelimiterType } from '@lezer/markdown'
+import type { InlineParser, BlockParser, BlockContext, Line, DelimiterType } from '@farvardin/lezer-parser-markdown'
 
 const PandocSpanDelimiter: DelimiterType = {}
 

@@ -12,7 +12,7 @@
  * END HEADER
  */
 
-import type { InlineParser, BlockParser, DelimiterType, BlockContext, Line } from '@lezer/markdown'
+import type { InlineParser, BlockParser, DelimiterType, BlockContext, Line } from '@farvardin/lezer-parser-markdown'
 
 const FootnoteDelimiter: DelimiterType = {}
 

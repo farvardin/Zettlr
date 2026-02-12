@@ -18,7 +18,7 @@
  * END HEADER
  */
 
-import type { DelimiterType, InlineParser } from '@lezer/markdown'
+import type { DelimiterType, InlineParser } from '@farvardin/lezer-parser-markdown'
 
 const PandocLinkDelimiter: DelimiterType = {}
 
