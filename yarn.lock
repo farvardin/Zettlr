@@ -1283,7 +1283,7 @@ __metadata:
 
 "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown::locator=zettlr%40workspace%3A.":
   version: 6.5.3
-  resolution: "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown#source/common/farvardin/codemirror-lang-markdown::hash=897c13&locator=zettlr%40workspace%3A."
+  resolution: "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown#source/common/farvardin/codemirror-lang-markdown::hash=e57c7e&locator=zettlr%40workspace%3A."
   dependencies:
     "@codemirror/autocomplete": "npm:^6.7.1"
     "@codemirror/lang-html": "npm:^6.0.0"
@@ -1292,17 +1292,17 @@ __metadata:
     "@codemirror/view": "npm:^6.0.0"
     "@farvardin/lezer-parser-markdown": "npm:^1.6.8"
     "@lezer/common": "npm:^1.2.1"
-  checksum: 10/8aef4ec8f2de8fee16c7077439ecacae6a3b13e64f0779a36860c0331bb7705e84c38d39b3b824655d908b9104511af85e3b60d42e978c9b3a9527b56580b2bd
+  checksum: 10/798741c25181b2e93da58b8a8738c734e8954bd3b3b66a678b42dcc40262cee29c8275868943cb1cef2bc2b94649b11bcb9368ab95c38223334da2da81941355
   languageName: node
   linkType: hard
 
 "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown::locator=zettlr%40workspace%3A.":
   version: 1.6.8
-  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=2545d2&locator=zettlr%40workspace%3A."
+  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=e7ccb3&locator=zettlr%40workspace%3A."
   dependencies:
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/873b905d56f24dd5e4d17057f256db5b39bff24fb71391d5b30153c8d42952977d3367c7d72fde3ffb3d1386b7991f5cfcff9dc9287403c72a36916cf0250e0f
+  checksum: 10/f27dab0f67461ea7f28b5be1f55100f9b7e5bb443d717bfe49dbe0a7544ae8211d83108f3aa31b99961c39da97f98ce1834045fb4a3f83f6abe440c2051aed39
   languageName: node
   linkType: hard
 

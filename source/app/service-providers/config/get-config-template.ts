@@ -137,7 +137,8 @@ export interface ConfigOptions {
     inputMode: 'default'|'vim'|'emacs'
     boldFormatting: '**'|'__'
     italicFormatting: '_'|'*'
-//    highlightFormatting: 'span'|'=='
+// TODO   highlightFormatting: 'span'|'=='
+      highlightFormatting: 'span'|'=='
     readabilityAlgorithm: 'dale-chall'|'gunning-fog'|'coleman-liau'|'automated-readability'
     lint: {
       markdown: boolean
