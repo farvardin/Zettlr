@@ -1,0 +1,50 @@
+{
+  "name": "@farvardin/codemirror-lang-markdown",
+  "version": "6.5.3",
+  "description": "txt2tags/Markdown language support for the CodeMirror code editor",
+  "keywords": [
+    "editor",
+    "code"
+  ],
+  "homepage": "https://github.com/farvardin/codemirror-lang-markdown#readme",
+  "bugs": {
+    "url": "https://github.com/farvardin/codemirror-lang-markdown/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/farvardin/codemirror-lang-markdown.git"
+  },
+  "license": "MIT",
+  "author": "Éric Forgeot <eforgeot@gmail.com> (https://github.com/farvardin/)",
+  "type": "module",
+  "exports": {
+    "import": "./dist/index.js",
+    "require": "./dist/index.cjs"
+  },
+  "main": "dist/index.cjs",
+  "types": "dist/index.d.ts",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "cm-runtests",
+    "prepare": "cm-buildhelper src/index.ts"
+  },
+  "dependencies": {
+    "@codemirror/autocomplete": "^6.7.1",
+    "@codemirror/lang-html": "^6.0.0",
+    "@codemirror/language": "^6.3.0",
+    "@codemirror/state": "^6.0.0",
+    "@codemirror/view": "^6.0.0",
+    "@farvardin/lezer-parser-markdown": "^1.6.8",
+    "@lezer/common": "^1.2.1"
+  },
+    "resolutions": {
+      "@farvardin/lezer-parser-markdown": "1.6.8"
+  },
+  "devDependencies": {
+    "@codemirror/buildhelper": "^1.0.0"
+  },
+  "module": "dist/index.js",
+  "sideEffects": false
+}
