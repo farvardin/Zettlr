@@ -23,7 +23,9 @@
       "source/*": ["source/*"],
       "@common/*": ["source/common/*"],
       "@providers/*": ["source/app/service-providers/*"],
-      "@dts/*": ["source/types/*"]
+      "@dts/*": ["source/types/*"],
+      "@farvardin/lezer-parser-markdown": ["source/common/farvardin/lezer-parser-markdown"],
+      "@farvardin/codemirror-lang-markdown": ["source/common/farvardin/codemirror-lang-markdown"]
     }
   },
   "include": [

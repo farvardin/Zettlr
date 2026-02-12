@@ -62,7 +62,9 @@ module.exports = {
       source: [path.resolve(__dirname, 'source')],
       '@common': [path.resolve(__dirname, 'source/common')],
       '@providers': [path.resolve(__dirname, 'source/app/service-providers')],
-      '@dts': [path.resolve(__dirname, 'source/types')]
+      '@dts': [path.resolve(__dirname, 'source/types')],
+      '@farvardin/codemirror-lang-markdown': path.resolve(__dirname,'source/common/farvardin/codemirror-lang-markdown'),
+      '@farvardin/lezer-parser-markdown': path.resolve(__dirname,'source/common/farvardin/lezer-parser-markdown')
     }
   },
   externals

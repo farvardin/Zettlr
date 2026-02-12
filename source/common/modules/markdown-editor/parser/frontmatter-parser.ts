@@ -44,7 +44,7 @@ export const frontmatterParser: BlockParser = {
   before: 'HorizontalRule',
   parse: (ctx, line) => {
     // This parser is inspired by the BlockParsers defined in
-    // @farvardin/lezer-parser-markdown/src/markdown.ts
+    // @farvardin/lezer-parser-markdown/srcsrc/markdown.ts
     if (line.text !== '---' || ctx.lineStart !== 0) {
       return false
     }

@@ -268,21 +268,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@codemirror/lang-markdown@npm:^6.5.0":
-  version: 6.5.0
-  resolution: "@codemirror/lang-markdown@npm:6.5.0"
-  dependencies:
-    "@codemirror/autocomplete": "npm:^6.7.1"
-    "@codemirror/lang-html": "npm:^6.0.0"
-    "@codemirror/language": "npm:^6.3.0"
-    "@codemirror/state": "npm:^6.0.0"
-    "@codemirror/view": "npm:^6.0.0"
-    "@lezer/common": "npm:^1.2.1"
-    "@lezer/markdown": "npm:^1.0.0"
-  checksum: 10/becccc2905a52141b97c4c0a3e63bd98f6e60c52c0afc0ba96cca8012f06fe0c9bfcae20b02841f132e080e157e05eb451c61979438aec63f65d2ed39977b1aa
-  languageName: node
-  linkType: hard
-
 "@codemirror/lang-php@npm:^6.0.2":
   version: 6.0.2
   resolution: "@codemirror/lang-php@npm:6.0.2"
@@ -1296,6 +1281,41 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown::locator=zettlr%40workspace%3A.":
+  version: 6.5.3
+  resolution: "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown#source/common/farvardin/codemirror-lang-markdown::hash=897c13&locator=zettlr%40workspace%3A."
+  dependencies:
+    "@codemirror/autocomplete": "npm:^6.7.1"
+    "@codemirror/lang-html": "npm:^6.0.0"
+    "@codemirror/language": "npm:^6.3.0"
+    "@codemirror/state": "npm:^6.0.0"
+    "@codemirror/view": "npm:^6.0.0"
+    "@farvardin/lezer-parser-markdown": "npm:^1.6.8"
+    "@lezer/common": "npm:^1.2.1"
+  checksum: 10/8aef4ec8f2de8fee16c7077439ecacae6a3b13e64f0779a36860c0331bb7705e84c38d39b3b824655d908b9104511af85e3b60d42e978c9b3a9527b56580b2bd
+  languageName: node
+  linkType: hard
+
+"@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown::locator=zettlr%40workspace%3A.":
+  version: 1.6.8
+  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=2545d2&locator=zettlr%40workspace%3A."
+  dependencies:
+    "@lezer/common": "npm:^1.5.0"
+    "@lezer/highlight": "npm:^1.0.0"
+  checksum: 10/873b905d56f24dd5e4d17057f256db5b39bff24fb71391d5b30153c8d42952977d3367c7d72fde3ffb3d1386b7991f5cfcff9dc9287403c72a36916cf0250e0f
+  languageName: node
+  linkType: hard
+
+"@farvardin/lezer-parser-markdown@npm:^1.6.8":
+  version: 1.6.8
+  resolution: "@farvardin/lezer-parser-markdown@npm:1.6.8"
+  dependencies:
+    "@lezer/common": "npm:^1.5.0"
+    "@lezer/highlight": "npm:^1.0.0"
+  checksum: 10/59fffe02c56356d69f112fdf93b151e2848646edd62e3e390b60e4dff2df9f5dec00313a35570678c50a2f55ef666b871658651f17cc55d2b02aacb08ae5d9a8
+  languageName: node
+  linkType: hard
+
 "@gar/promisify@npm:^1.1.3":
   version: 1.1.3
   resolution: "@gar/promisify@npm:1.1.3"
@@ -1693,16 +1713,6 @@ __metadata:
   dependencies:
     "@lezer/common": "npm:^1.0.0"
   checksum: 10/5407e10c8f983eedd8eaace9f2582aac39f7b280cdcf4e396d53ca6c1e654ce1bb2fdbddfbf9a63c8462046be37c8c4da180be7ffaf2d2aa24eb71622f624d85
-  languageName: node
-  linkType: hard
-
-"@lezer/markdown@npm:^1.0.0, @lezer/markdown@npm:^1.6.3":
-  version: 1.6.3
-  resolution: "@lezer/markdown@npm:1.6.3"
-  dependencies:
-    "@lezer/common": "npm:^1.5.0"
-    "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/aa8d728095604ceefd2f0c6625ca4c392ed232906663b9d837825efaf0896607657687118465deb7d06388befda4d09b7ff7032bd741b13e548a0adfb5c8b30e
   languageName: node
   linkType: hard
 
@@ -14996,7 +15006,6 @@ __metadata:
     "@codemirror/lang-css": "npm:^6.3.1"
     "@codemirror/lang-javascript": "npm:^6.2.4"
     "@codemirror/lang-json": "npm:^6.0.2"
-    "@codemirror/lang-markdown": "npm:^6.5.0"
     "@codemirror/lang-php": "npm:^6.0.2"
     "@codemirror/lang-python": "npm:^6.2.1"
     "@codemirror/lang-yaml": "npm:^6.1.2"
@@ -15015,10 +15024,11 @@ __metadata:
     "@electron/fuses": "npm:^2.0.0"
     "@electron/notarize": "npm:^3.1.1"
     "@eslint/config-inspector": "npm:^1.4.2"
+    "@farvardin/codemirror-lang-markdown": "file:source/common/farvardin/codemirror-lang-markdown"
+    "@farvardin/lezer-parser-markdown": "file:source/common/farvardin/lezer-parser-markdown"
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.2.3"
     "@lezer/lr": "npm:^1.4.7"
-    "@lezer/markdown": "npm:^1.6.3"
     "@replit/codemirror-emacs": "npm:^6.1.0"
     "@replit/codemirror-lang-nix": "npm:^6.0.1"
     "@replit/codemirror-vim": "npm:^6.3.0"
