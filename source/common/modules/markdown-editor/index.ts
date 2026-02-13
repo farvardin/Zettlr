@@ -434,6 +434,20 @@ export default class MarkdownEditor extends EventEmitter {
     // This particular editor type needs access to the window and leaf IDs
     extensions.push(editorMetadataFacet.of({ windowId: this.windowId, leafId: this.leafId }))
 
+    // TODO : test
+          function preprocessMarkdown(input: string): string {
+          return input.replace(
+            // for italic
+            /(^|[^/])\/\/([^\s/][^/]*?[^\s/])\/\/(?!\/)/g, 
+            '$1*$2*'  )}
+            
+            const processedContent = preprocessMarkdown(content)
+            
+            console.error("PREPROCESS MARKDOWN CALLED")
+            console.error(content)
+            console.error(preprocessMarkdown(content))
+    // end TODO
+            
     const state = EditorState.create({
       doc: Text.of(content.split('\n')),
       extensions

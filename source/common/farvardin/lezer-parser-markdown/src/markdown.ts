@@ -227,7 +227,7 @@ const DefaultSkipMarkup: {[type: number]: (bl: CompositeBlock, cx: BlockContext,
   },
   [Type.OrderedList]: skipForList,
   [Type.BulletList]: skipForList,
-  [Type.Document]() { return true }
+  [Type.Document]() { return true } 
 }
 
 export function space(ch: number) { return ch == 32 || ch == 9 || ch == 10 || ch == 13 }
