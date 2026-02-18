@@ -28,6 +28,9 @@ const commonRules: Record<string, any> = {
   '.cm-tag-name, .cm-attribute-name, .cm-attribute-value, .cm-angle-bracket, .cm-definition-operator': {
     fontFamily: 'Inconsolata, monospace'
   },
+  '.cm-line': {
+    fontSize: '1.3em'
+  },
   '.cm-yaml-frontmatter-start, .cm-yaml-frontmatter-end, .mermaid-chart.error': {
     fontFamily: 'Inconsolata, monospace'
   }, // END: Monospace elements

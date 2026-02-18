@@ -99,10 +99,10 @@ export function getAppearanceFields (config: ConfigOptions): PreferencesFieldset
             },
             'karl-marx-stadt': {
               textColor: 'white',
-              backgroundColor: '#dc2d2d',
-              name: 'Karl-Marx-Stadt',
+              backgroundColor: '#A66A52',
+              name: 'Chemnitz',
               fontFamily: 'inherit',
-              description: 'City names change, but their spirit remains: A forceful red complements this theme\'s progressive appeal and sans-serif font.'
+              description: 'The red tower in Chemnitz was made for lasting. A forceful red complements this theme\'s progressive appeal and sans-serif font.'
             },
             bordeaux: {
               textColor: '#dc2d2d',

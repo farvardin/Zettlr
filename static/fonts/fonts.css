@@ -70,3 +70,34 @@
     font-style: normal;
     font-weight: bold;
 }
+
+/* Courier Prime */
+@font-face {
+    font-family: 'Courier Prime';
+    src: url(CourierPrime-Regular.ttf) format('truetype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url(CourierPrime-Italic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: normal;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url(CourierPrime-Bold.ttf) format('truetype');
+    font-style: normal;
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Courier Prime';
+    src: url(CourierPrime-BoldItalic.ttf) format('truetype');
+    font-style: italic;
+    font-weight: bold;
+}
+
+

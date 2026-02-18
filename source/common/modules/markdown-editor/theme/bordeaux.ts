@@ -25,6 +25,9 @@ const commonRules: Record<string, any> = {
   '.cm-link.cm-code-mark.cm-meta': { color: 'inherit' },
   '.cm-citation-locator': { textDecoration: 'underline' },
   '.blockquote-wrapper': { borderLeftColor: primaryColor },
+  '.cm-line': {
+    fontSize: '1.2em'
+  },
 }
 
 export const themeBordeauxLight = EditorView.theme({
