@@ -441,11 +441,12 @@ export default class MarkdownEditor extends EventEmitter {
             /(^|[^/])\/\/([^\s/][^/]*?[^\s/])\/\/(?!\/)/g, 
             '$1*$2*'  )}
             
-            const processedContent = preprocessMarkdown(content)
-            
-            console.error("PREPROCESS MARKDOWN CALLED")
-            console.error(content)
-            console.error(preprocessMarkdown(content))
+            // works in console but doesn't change the output for real
+            //const processedContent = preprocessMarkdown(content)
+             
+          // console.error("PREPROCESS MARKDOWN CALLED")
+          // console.error(content)
+          // console.error(preprocessMarkdown(content))
     // end TODO
             
     const state = EditorState.create({

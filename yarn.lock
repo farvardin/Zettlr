@@ -1298,11 +1298,11 @@ __metadata:
 
 "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown::locator=zettlr%40workspace%3A.":
   version: 1.6.8
-  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=7f81ca&locator=zettlr%40workspace%3A."
+  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=288916&locator=zettlr%40workspace%3A."
   dependencies:
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/a5019491bee6018ac1f4de4c5d0b1fba7e83f16468c06dc5fe71dcd7790bbfee5c972d613d69840f9967a2ab7b7652cb794bb76ce9ca9e2c44c2fe3c723fcade
+  checksum: 10/e47111044f4b94174c1e986a347e39c778e9461ee151a95acdb55180fd9b26dddab60c7a333078c74270f67677ef006a10871eaf0750fc673e10892654b55772
   languageName: node
   linkType: hard
 

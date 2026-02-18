@@ -1472,7 +1472,8 @@ const DefaultInline: {[name: string]: (cx: InlineContext, next: number, pos: num
         elt(Type.LinkMark, start + url[0].length, start + 1 + url[0].length)
       ]))
     }
-    let comment = /^!--[^>](?:-[^-]|[^-])*?-->/i.exec(after)
+    
+    let comment = /^(?:!--[^>](?:-[^-]|[^-])*?-->|% .*)/i.exec(after)
     if (comment) return cx.append(elt(Type.Comment, start, start + 1 + comment[0].length))
     let procInst = /^\?[^]*?\?>/.exec(after)
     if (procInst) return cx.append(elt(Type.ProcessingInstruction, start, start + 1 + procInst[0].length))

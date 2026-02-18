@@ -9,7 +9,7 @@ VERSION="3.8.3"
 
 BASE_PATH="https://github.com/jgm/pandoc/releases/download/$VERSION"
 
-PANDOC_LINUX_X64="$BASE_PATH/pandoc-$VERSION-linux-amd64.tar.gz"
+PANDOC_LINUX_X64="https://github.com/farvardin/pandoc/releases/download/3.9/pandoc-t2t"
 PANDOC_LINUX_ARM="$BASE_PATH/pandoc-$VERSION-linux-arm64.tar.gz"
 PANDOC_WIN32_X64="$BASE_PATH/pandoc-$VERSION-windows-x86_64.zip"
 PANDOC_MACOS_X64="$BASE_PATH/pandoc-$VERSION-x86_64-macOS.zip"
@@ -107,7 +107,7 @@ then
     cd $EXTRACTEDFOLDER
     mv ./bin/pandoc ../pandoc-darwin-$ARCH
     cd ..
-elif [ "$PLATFORM" == "linux" ]
+elif [ "$PLATFORM" == "linux" ] && [ "$ARCH" == "arm" ]
 then
     # Linux builds are a tar.gz file where the binary is in ./bin
     tar -xzf $BASENAME
@@ -116,6 +116,11 @@ then
     echo "Moving binary from ./bin/pandoc to resources directory ..."
     cd $EXTRACTEDFOLDER
     mv ./bin/pandoc ../pandoc-linux-$ARCH
+    cd ..
+elif [ "$PLATFORM" == "linux" ] && [ "$ARCH" == "x64" ]
+then
+    # pandoc-t2t version
+    mv ./pandoc-t2t ./pandoc-linux-$ARCH
     cd ..
 elif [ "$PLATFORM" == "win32" ]
 then
