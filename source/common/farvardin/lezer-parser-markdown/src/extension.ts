@@ -17,8 +17,10 @@ export const Strikethrough: MarkdownConfig = {
   }],
   parseInline: [{
     name: "Strikethrough",
+    /* 126 ~ */
+    /* 45 - */
     parse(cx, next, pos) {
-      if (next != 126 /* '~' */ || cx.char(pos + 1) != 126 || cx.char(pos + 2) == 126) return -1
+      if (next != 45 /* '~' */ || cx.char(pos + 1) != 45 || cx.char(pos + 2) == 45) return -1
       let before = cx.slice(pos - 1, pos), after = cx.slice(pos + 2, pos + 3)
       let sBefore = /\s|^$/.test(before), sAfter = /\s|^$/.test(after)
       let pBefore = Punctuation.test(before), pAfter = Punctuation.test(after)

@@ -436,10 +436,19 @@ export default class MarkdownEditor extends EventEmitter {
 
     // TODO : test
           function preprocessMarkdown(input: string): string {
-          return input.replace(
+            
+           return input.replace(
+            /^(\s*)%\s?/gm, '$1> '  )
+          }
+       
+          
+            
+            //.replace(
             // for italic
-            /(^|[^/])\/\/([^\s/][^/]*?[^\s/])\/\/(?!\/)/g, 
-            '$1*$2*'  )}
+            // /(^|[^/])\/\/([^\s/][^/]*?[^\s/])\/\/(?!\/)/g, 
+            // '$1*$2*'  
+            
+            // blockquote : % text -> > text
             
             // works in console but doesn't change the output for real
             //const processedContent = preprocessMarkdown(content)

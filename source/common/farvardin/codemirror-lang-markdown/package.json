@@ -36,11 +36,8 @@
     "@codemirror/language": "^6.3.0",
     "@codemirror/state": "^6.0.0",
     "@codemirror/view": "^6.0.0",
-    "@farvardin/lezer-parser-markdown": "^1.6.8",
+    "@farvardin/lezer-parser-markdown": "file:../lezer-parser-markdown",
     "@lezer/common": "^1.2.1"
-  },
-    "resolutions": {
-      "@farvardin/lezer-parser-markdown": "1.6.8"
   },
   "devDependencies": {
     "@codemirror/buildhelper": "^1.0.0"
