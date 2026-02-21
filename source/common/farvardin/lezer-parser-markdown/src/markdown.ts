@@ -43,6 +43,7 @@ export enum Type {
 
   CodeBlock,
   FencedCode,
+  PercentQuote,
   Blockquote,
   HorizontalRule,
   BulletList,
@@ -253,7 +254,8 @@ function isFencedCode(line: Line) {
 
 function isBlockquote(line: Line) {
  // return line.next != 62 /* '>' */ ? -1 : line.text.charCodeAt(line.pos + 1) == 32 ? 2 : 1
-  return (line.next !== 37 && line.next !== 62)  
+  // return (line.next !== 37 && line.next !== 62)  
+  return (line.next !== 62)  
   ? -1
   : line.text.charCodeAt(line.pos + 1) === 32
     ? 2
@@ -485,6 +487,37 @@ const DefaultBlockParsers: {[name: string]: ((cx: BlockContext, line: Line) => B
     return null
   },
 
+  
+PercentBlockquote(cx: Context, line: Line) {
+  // using % for comment, will be detected as blockquote 
+  if (line.next !== 37 /* '%' */) return false
+
+  let off = line.pos
+  let from = cx.lineStart + off
+
+  // Saute "% " ou "%"
+  let start = off + (space(line.text.charCodeAt(off + 1)) ? 2 : 1)
+
+  let buf = cx.buffer
+    // Marqueur visuel du blockquote (%)
+    .write(Type.QuoteMark, 0, 1)
+    // Contenu inline de la ligne
+    .writeElements(
+      cx.parser.parseInline(line.text.slice(start), from + start),
+      -from
+    )
+
+  // IMPORTANT :
+  // On réutilise le type Blockquote pour le rendu,
+  // mais SANS startContext → donc mono-ligne
+  let node = buf.finish(Type.Blockquote, line.text.length - off)
+
+  // Ferme explicitement la ligne (comme un heading)
+  cx.nextLine()
+  cx.addNode(node, from)
+  return true
+}
+  
   ATXHeading(cx, line) {
     let size = isAtxHeading(line)
     if (size < 0) return false
@@ -633,6 +666,7 @@ const DefaultLeafBlocks: {[name: string]: (cx: BlockContext, leaf: LeafBlock) =>
 
 const DefaultEndLeaf: readonly ((cx: BlockContext, line: Line) => boolean)[] = [
   (_, line) => isAtxHeading(line) >= 0,
+ // (_, line) => isPercentQuote(line) >= 0,
   (_, line) => isFencedCode(line) >= 0,
   (_, line) => isBlockquote(line) >= 0,
   (p, line) => isBulletList(line, p, true) >= 0,
@@ -1952,6 +1986,7 @@ const markdownHighlighting = styleTags({
   "StrongEmphasis/...": t.strong,
   "Link/... Image/...": t.link,
   "OrderedList/... BulletList/...": t.list,
+  "PercentQuote/...": t.quote,
   "BlockQuote/...": t.quote,
   "InlineCode CodeText": t.monospace,
   "URL Autolink": t.url,

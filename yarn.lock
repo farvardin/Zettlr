@@ -1298,21 +1298,21 @@ __metadata:
 
 "@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown::locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D7f20d8%26locator%3Dzettlr%2540workspace%253A.":
   version: 1.6.8
-  resolution: "@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown#../lezer-parser-markdown::hash=2f58cf&locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D7f20d8%26locator%3Dzettlr%2540workspace%253A."
+  resolution: "@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown#../lezer-parser-markdown::hash=05bb6b&locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D7f20d8%26locator%3Dzettlr%2540workspace%253A."
   dependencies:
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/c4724e88c8a10a732350ab31286c0deab2ce7ec4c068542dc9bb3d07160aad5d4beeed841f4b68523a3f07b416b510afed028937c4e48b83eae21bf9887b6428
+  checksum: 10/8b1505b30279512985031702e0697626bba96809de1940b2ca431ea6998bb0550a194950e8cf6af91f368d46b49cf5160f9f5c72215278a8ffae5a2c5f8d931a
   languageName: node
   linkType: hard
 
 "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown::locator=zettlr%40workspace%3A.":
   version: 1.6.8
-  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=2f58cf&locator=zettlr%40workspace%3A."
+  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=05bb6b&locator=zettlr%40workspace%3A."
   dependencies:
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/c4724e88c8a10a732350ab31286c0deab2ce7ec4c068542dc9bb3d07160aad5d4beeed841f4b68523a3f07b416b510afed028937c4e48b83eae21bf9887b6428
+  checksum: 10/8b1505b30279512985031702e0697626bba96809de1940b2ca431ea6998bb0550a194950e8cf6af91f368d46b49cf5160f9f5c72215278a8ffae5a2c5f8d931a
   languageName: node
   linkType: hard
 
