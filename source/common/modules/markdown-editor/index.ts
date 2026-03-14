@@ -435,14 +435,12 @@ export default class MarkdownEditor extends EventEmitter {
     extensions.push(editorMetadataFacet.of({ windowId: this.windowId, leafId: this.leafId }))
 
     // TODO : test
-          function preprocessMarkdown(input: string): string {
-            
-           return input.replace(
-            /^(\s*)%\s?/gm, '$1> '  )
-          }
+     //     function preprocessMarkdown(input: string): string {
+     //       
+     //      return input.replace(
+     //       /^(\s*)%\s?/gm, '$1> '  )
+     //     }
        
-          
-            
             //.replace(
             // for italic
             // /(^|[^/])\/\/([^\s/][^/]*?[^\s/])\/\/(?!\/)/g, 
