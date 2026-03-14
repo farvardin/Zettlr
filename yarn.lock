@@ -1283,7 +1283,7 @@ __metadata:
 
 "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown::locator=zettlr%40workspace%3A.":
   version: 6.5.3
-  resolution: "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown#source/common/farvardin/codemirror-lang-markdown::hash=7f20d8&locator=zettlr%40workspace%3A."
+  resolution: "@farvardin/codemirror-lang-markdown@file:source/common/farvardin/codemirror-lang-markdown#source/common/farvardin/codemirror-lang-markdown::hash=05c8c0&locator=zettlr%40workspace%3A."
   dependencies:
     "@codemirror/autocomplete": "npm:^6.7.1"
     "@codemirror/lang-html": "npm:^6.0.0"
@@ -1292,27 +1292,27 @@ __metadata:
     "@codemirror/view": "npm:^6.0.0"
     "@farvardin/lezer-parser-markdown": "file:../lezer-parser-markdown"
     "@lezer/common": "npm:^1.2.1"
-  checksum: 10/f7b55682d5e9bcd372610aeffd8b0cfa207300173bfecbfd594d05bf625479687a765a89a3c96d9067c1913dad2f802bdb73c1fb7fb090fbe1961f7ec147e3f1
+  checksum: 10/98505c4a632d658faaef07e7aadff14cc5df93ee480e6344f6b660a3bef0c69a06bf133948d4b999ab1bbcfac14a15eb60178901199168c432f488efe1e01680
   languageName: node
   linkType: hard
 
-"@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown::locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D7f20d8%26locator%3Dzettlr%2540workspace%253A.":
+"@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown::locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D05c8c0%26locator%3Dzettlr%2540workspace%253A.":
   version: 1.6.8
-  resolution: "@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown#../lezer-parser-markdown::hash=05bb6b&locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D7f20d8%26locator%3Dzettlr%2540workspace%253A."
+  resolution: "@farvardin/lezer-parser-markdown@file:../lezer-parser-markdown#../lezer-parser-markdown::hash=a01e88&locator=%40farvardin%2Fcodemirror-lang-markdown%40file%3Asource%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%23source%2Fcommon%2Ffarvardin%2Fcodemirror-lang-markdown%3A%3Ahash%3D05c8c0%26locator%3Dzettlr%2540workspace%253A."
   dependencies:
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/8b1505b30279512985031702e0697626bba96809de1940b2ca431ea6998bb0550a194950e8cf6af91f368d46b49cf5160f9f5c72215278a8ffae5a2c5f8d931a
+  checksum: 10/e57fbb417bdfdc49997b9bc0b9087301ae98bd877e1803639086626309d50b0f9fc725dc93b1abda98faa38b3403d4cda3ba833d9af37b74fbf5bc8c7b99bfca
   languageName: node
   linkType: hard
 
 "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown::locator=zettlr%40workspace%3A.":
   version: 1.6.8
-  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=05bb6b&locator=zettlr%40workspace%3A."
+  resolution: "@farvardin/lezer-parser-markdown@file:source/common/farvardin/lezer-parser-markdown#source/common/farvardin/lezer-parser-markdown::hash=a01e88&locator=zettlr%40workspace%3A."
   dependencies:
     "@lezer/common": "npm:^1.5.0"
     "@lezer/highlight": "npm:^1.0.0"
-  checksum: 10/8b1505b30279512985031702e0697626bba96809de1940b2ca431ea6998bb0550a194950e8cf6af91f368d46b49cf5160f9f5c72215278a8ffae5a2c5f8d931a
+  checksum: 10/e57fbb417bdfdc49997b9bc0b9087301ae98bd877e1803639086626309d50b0f9fc725dc93b1abda98faa38b3403d4cda3ba833d9af37b74fbf5bc8c7b99bfca
   languageName: node
   linkType: hard
 
